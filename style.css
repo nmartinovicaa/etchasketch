@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box {
+    border: 1px solid black;
+
+}
+
+
+.pres {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
