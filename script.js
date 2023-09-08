@@ -32,15 +32,16 @@ function resetFn() {
         div.style.width = `${800/rowOfBoxes - 2}px`
         div.style.height = `${800/rowOfBoxes - 2}px`
 
-        div.addEventListener('mouseover',turnBlack)
+        div.addEventListener('mouseover',turnColor,{once:true})
 
     }
 }
 
 
 
-function turnBlack(e) {
-   e.target.style.backgroundColor = 'black'
+function turnColor(e) {
+    const RandomColor = Math.floor(Math.random()*16777215).toString(16)
+   e.target.style.backgroundColor = `#${RandomColor}`
 }
 
 pageLoad()
